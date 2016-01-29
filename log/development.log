@@ -1,0 +1,1653 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 15:47:42) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 129ms (View: 114, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 15:47:42) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 15:47:42) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 15:47:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendered dogs/_upload (1.0ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.5ms)
+Rendered dogs/_upload (0.6ms)
+Completed in 30ms (View: 25, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 15:47:51) [PUT]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "id"=>"1", "commit"=>"Update", "dog"=>{"upload_attributes"=>{"1"=>{"description"=>"111"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"photo"=>"2016-01-28 15:21:36 的螢幕擷圖.png", "description"=>"555"}}}, "name"=>"AAA"}}
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mUpload Columns (8.2ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 15:57:20) [GET]
+  [4;36;1mDog Load (51.1ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (78.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 566ms (View: 407, DB: 131) | 200 OK [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 15:57:21) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 15:57:21) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 15:57:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mUpload Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+Rendered dogs/_upload (21.7ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Completed in 70ms (View: 49, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 15:57:38) [PUT]
+  Parameters: {"commit"=>"Update", "dog"=>{"name"=>"AAA", "upload_attributes"=>{"1"=>{"description"=>"111"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>"555", "photo"=>"2016-01-28 11:31:08 的螢幕擷圖.png"}}}}, "id"=>"1", "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI="}
+  [4;35;1mDog Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mUpload Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (22.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (48.0ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 16:00:38) [GET]
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.2ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 49ms (View: 41, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:00:38) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 16:00:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendered dogs/_upload (1.2ms)
+Rendered dogs/_upload (0.8ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Completed in 37ms (View: 31, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 16:00:46) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"1", "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"name"=>"AAA", "upload_attributes"=>{"1"=>{"description"=>"111"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>"555", "photo"=>"2016-01-28 15:25:44 的螢幕擷圖.png"}}}}}
+  [4;35;1mDog Columns (4.5ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.4ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 16:04:11) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.2ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 56ms (View: 47, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:04:12) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:04:12) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 16:04:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendered dogs/_upload (1.2ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Completed in 37ms (View: 31, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 16:04:18) [PUT]
+  Parameters: {"dog"=>{"upload_attributes"=>{"1"=>{"description"=>"111"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>"555", "photo"=>"2016-01-28 15:25:33 的螢幕擷圖.png"}}}, "name"=>"AAA"}, "commit"=>"Update", "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "id"=>"1"}
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Completed in 65ms (View: 1, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 16:04:50) [PUT]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"photo"=>"2016-01-28 15:25:33 的螢幕擷圖.png", "description"=>"555"}}, "1"=>{"description"=>"111"}}, "name"=>"AAA"}, "commit"=>"Update", "id"=>"1"}
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/dogs/1
+Completed in 59ms (DB: 3) | 302 Found [http://localhost/dogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-28 16:04:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Completed in 94ms (View: 88, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 16:05:40) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 37ms (View: 30, DB: 3) | 200 OK [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:05:40) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-28 16:05:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Completed in 54ms (View: 12, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 16:05:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.4ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendered dogs/_upload (1.4ms)
+Rendered dogs/_upload (0.8ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Completed in 38ms (View: 31, DB: 3) | 200 OK [http://localhost/dogs/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 16:06:03) [PUT]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}, "1"=>{"description"=>"555"}}, "name"=>"AAA"}, "commit"=>"Update", "id"=>"1"}
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.4ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Update (46.5ms)[0m   [0;1mUPDATE `uploads` SET `description` = '555', `updated_at` = '2016-01-28 08:06:03' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (128.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/dogs/1
+Completed in 246ms (DB: 177) | 302 Found [http://localhost/dogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-28 16:06:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Completed in 28ms (View: 21, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 16:06:06) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 31ms (View: 25, DB: 3) | 200 OK [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:06:06) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:06:06) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 16:07:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.6ms)
+Completed in 28ms (View: 22, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 16:07:07) [PUT]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>"666"}}, "1"=>{"description"=>"555"}}, "name"=>"AAA"}, "commit"=>"Update", "id"=>"1"}
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/dogs/1
+Completed in 29ms (DB: 2) | 302 Found [http://localhost/dogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-28 16:07:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Completed in 63ms (View: 56, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 16:13:35) [GET]
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 25ms (View: 19, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:13:35) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:13:35) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 16:57:18) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (40.1ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 901ms (View: 811, DB: 42) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 16:57:19) [GET]
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Load (0.4ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 74ms (View: 21, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:57:20) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:57:20) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 16:57:20) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-28 16:57:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Completed in 89ms (View: 82, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 16:57:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mUpload Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+Rendered dogs/_upload (20.2ms)
+Rendered dogs/_upload (0.8ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Completed in 66ms (View: 44, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 16:57:31) [PUT]
+  Parameters: {"id"=>"1", "commit"=>"Update", "dog"=>{"upload_attributes"=>{"1"=>{"description"=>"555"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"photo"=>"2016-01-28 16:01:12 的螢幕擷圖.png", "description"=>"666"}}}, "name"=>"AAA"}, "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI="}
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.save):
+  app/controllers/dogs_controller.rb:25:in `update'
+  app/controllers/dogs_controller.rb:23:in `update'
+
+Rendered rescues/_trace (76.5ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 16:58:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mUpload Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.4ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+Rendered dogs/_upload (0.8ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Completed in 33ms (View: 11, DB: 3) | 200 OK [http://localhost/dogs/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 16:58:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mUpload Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.7ms)
+Completed in 73ms (View: 11, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 16:58:16) [PUT]
+  Parameters: {"id"=>"1", "commit"=>"Update", "dog"=>{"upload_attributes"=>{"1"=>{"description"=>"555"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}}, "name"=>"AAA"}, "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI="}
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.save):
+  app/controllers/dogs_controller.rb:25:in `update'
+  app/controllers/dogs_controller.rb:23:in `update'
+
+Rendered rescues/_trace (27.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 17:01:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+Rendered dogs/_upload (0.9ms)
+Rendered dogs/_upload (0.5ms)
+Rendered dogs/_upload (0.5ms)
+Rendered dogs/_upload (0.5ms)
+Completed in 59ms (View: 14, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 17:01:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mUpload Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.6ms)
+Completed in 28ms (View: 10, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 17:02:00) [PUT]
+  Parameters: {"id"=>"1", "commit"=>"Update", "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"upload_attributes"=>{"1"=>{"description"=>"555"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}}, "name"=>"AAA"}}
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NameError (undefined local variable or method `uploads' for #<Upload:0x7fa9e0182888>):
+  app/models/upload.rb:36:in `remove_blank_fields'
+  app/controllers/dogs_controller.rb:24:in `update'
+  app/controllers/dogs_controller.rb:23:in `update'
+
+Rendered rescues/_trace (85.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 17:03:41) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"1", "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"upload_attributes"=>{"1"=>{"description"=>"555"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}}, "name"=>"AAA"}}
+  [4;36;1mDog Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.2ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NameError (undefined local variable or method `uploads' for #<Upload:0x7fc7004aeab0>):
+  app/models/upload.rb:36:in `remove_blank_fields'
+  app/controllers/dogs_controller.rb:24:in `update'
+  app/controllers/dogs_controller.rb:23:in `update'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-28 17:04:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Completed in 49ms (View: 41, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 17:04:44) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 72ms (View: 24, DB: 2) | 200 OK [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 17:04:44) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 17:04:44) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 17:04:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mUpload Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+Rendered dogs/_upload (1.1ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.6ms)
+Completed in 80ms (View: 61, DB: 3) | 200 OK [http://localhost/dogs/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 17:04:47) [PUT]
+  Parameters: {"dog"=>{"upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}, "1"=>{"description"=>"555"}}, "name"=>"AAA"}, "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "commit"=>"Update", "id"=>"1"}
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.2ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (Attempt to call private method):
+  app/models/upload.rb:36:in `remove_blank_fields'
+  app/controllers/dogs_controller.rb:24:in `update'
+  app/controllers/dogs_controller.rb:23:in `update'
+
+Rendered rescues/_trace (94.8ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-28 17:57:41) [GET]
+  [4;36;1mDog Load (74.1ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (27.5ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 897ms (View: 755, DB: 104) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 17:57:43) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-28 17:57:43) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-28 17:57:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mUpload Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+Rendered dogs/_upload (21.8ms)
+Rendered dogs/_upload (0.9ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Completed in 69ms (View: 49, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-28 17:57:48) [PUT]
+  Parameters: {"id"=>"1", "dog"=>{"upload_attributes"=>{"1"=>{"description"=>"555"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>"666"}}}, "name"=>"AAA"}, "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "commit"=>"Update"}
+  [4;35;1mDog Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.4ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (Attempt to call private method):
+  app/models/upload.rb:36:in `remove_blank_fields'
+  app/controllers/dogs_controller.rb:24:in `update'
+  app/controllers/dogs_controller.rb:23:in `update'
+
+Rendered rescues/_trace (54.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (23.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (24.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 09:05:39) [GET]
+  [4;35;1mDog Load (369.8ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;36;1mDog Columns (134.6ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Load (56.0ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.5ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 2846ms (View: 1990, DB: 610) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 09:05:42) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 33ms (View: 26, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 09:05:43) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 09:05:43) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 10:52:55) [GET]
+  [4;36;1mDog Load (117.6ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (24.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (28.9ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 1100ms (View: 885, DB: 173) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 10:52:56) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 10:52:56) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-29 10:53:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Completed in 52ms (View: 45, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-29 10:53:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+Rendered dogs/_upload (23.1ms)
+Rendered dogs/_upload (0.9ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.6ms)
+Completed in 105ms (View: 88, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-29 10:53:18) [PUT]
+  Parameters: {"commit"=>"Update", "dog"=>{"name"=>"AAA", "upload_attributes"=>{"1"=>{"description"=>"555"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}}}, "id"=>"1", "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI="}
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (Attempt to call private method):
+  app/models/upload.rb:36:in `remove_blank_fields'
+  app/controllers/dogs_controller.rb:24:in `update'
+  app/controllers/dogs_controller.rb:23:in `update'
+
+Rendered rescues/_trace (98.3ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-29 10:54:46) [PUT]
+  Parameters: {"commit"=>"Update", "dog"=>{"name"=>"AAA", "upload_attributes"=>{"1"=>{"description"=>"555"}, "new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}}}, "id"=>"1", "authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI="}
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.4ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (Attempt to call private method):
+  app/models/upload.rb:37:in `remove_blank_fields'
+  app/controllers/dogs_controller.rb:24:in `update'
+  app/controllers/dogs_controller.rb:23:in `update'
+
+Rendered rescues/_trace (101.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-29 10:54:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mUpload Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.2ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+Rendered dogs/_upload (0.8ms)
+Rendered dogs/_upload (0.5ms)
+Rendered dogs/_upload (0.4ms)
+Rendered dogs/_upload (0.4ms)
+Completed in 57ms (View: 12, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-29 10:55:00) [PUT]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"name"=>"AAA", "upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}, "1"=>{"description"=>"555"}}}, "id"=>"1", "commit"=>"Update"}
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (Attempt to call private method):
+  app/models/upload.rb:37:in `remove_blank_fields'
+  app/controllers/dogs_controller.rb:24:in `update'
+  app/controllers/dogs_controller.rb:23:in `update'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-29 10:56:55) [PUT]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"name"=>"AAA", "upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}, "1"=>{"description"=>"555"}}}, "id"=>"1", "commit"=>"Update"}
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.save):
+  app/controllers/dogs_controller.rb:25:in `update'
+  app/controllers/dogs_controller.rb:23:in `update'
+
+Rendered rescues/_trace (30.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-29 10:57:59) [PUT]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"name"=>"AAA", "upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}, "1"=>{"description"=>"555"}}}, "id"=>"1", "commit"=>"Update"}
+  [4;36;1mDog Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Load (0.2ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Create (26.8ms)[0m   [0mINSERT INTO `uploads` (`updated_at`, `photo_file_size`, `created_at`, `dog_id`, `description`, `photo_file_name`) VALUES('2016-01-29 02:57:59', NULL, '2016-01-29 02:57:59', 1, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (57.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/dogs/1
+Completed in 110ms (DB: 86) | 302 Found [http://localhost/dogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-29 10:57:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Completed in 27ms (View: 20, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 10:57:59) [GET]
+
+ActionController::RoutingError (No route matches "/photos/pagesize/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 10:57:59) [GET]
+
+ActionController::RoutingError (No route matches "/photos/pagesize/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 10:58:03) [GET]
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 36ms (View: 29, DB: 3) | 200 OK [http://localhost/dogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 10:58:03) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 10:58:03) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 10:58:04) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 72ms (View: 65, DB: 2) | 200 OK [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 10:58:04) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 10:58:04) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 10:59:14) [GET]
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;36;1mDog Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 32ms (View: 26, DB: 2) | 200 OK [http://localhost/dogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-29 10:59:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.6ms)
+Completed in 78ms (View: 70, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-29 10:59:25) [PUT]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"name"=>"AAA", "upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}, "1"=>{"description"=>"555"}, "4"=>{"description"=>""}}}, "id"=>"1", "commit"=>"Update"}
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mUpload Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Update (214.5ms)[0m   [0mUPDATE `uploads` SET dog_id = NULL WHERE (dog_id = 1 AND id IN (4)) [0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (58.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Create (0.4ms)[0m   [0;1mINSERT INTO `uploads` (`updated_at`, `photo_file_size`, `created_at`, `dog_id`, `description`, `photo_file_name`) VALUES('2016-01-29 02:59:26', NULL, '2016-01-29 02:59:26', 1, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (113.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/dogs/1
+Completed in 417ms (DB: 390) | 302 Found [http://localhost/dogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-29 10:59:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Completed in 25ms (View: 19, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 10:59:26) [GET]
+
+ActionController::RoutingError (No route matches "/photos/pagesize/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-01-29 10:59:26) [GET]
+
+ActionController::RoutingError (No route matches "/photos/pagesize/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-29 10:59:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Completed in 26ms (View: 20, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:00:01) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 32ms (View: 24, DB: 2) | 200 OK [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:00:02) [GET]
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;36;1mDog Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 63ms (View: 56, DB: 3) | 200 OK [http://localhost/dogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:00:03) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 29ms (View: 23, DB: 3) | 200 OK [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-29 11:00:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Completed in 61ms (View: 54, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:00:07) [GET]
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;36;1mDog Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 31ms (View: 25, DB: 2) | 200 OK [http://localhost/dogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-29 11:00:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.7ms)
+Completed in 29ms (View: 23, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-29 11:00:12) [PUT]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"name"=>"AAA", "upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}, "1"=>{"description"=>"555"}, "5"=>{"description"=>"666"}}}, "id"=>"1", "commit"=>"Update"}
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;36;1mUpload Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Load (0.2ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Update (0.2ms)[0m   [0mUPDATE `uploads` SET dog_id = NULL WHERE (dog_id = 1 AND id IN (5)) [0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (63.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUpload Create (0.3ms)[0m   [0;1mINSERT INTO `uploads` (`updated_at`, `photo_file_size`, `created_at`, `dog_id`, `description`, `photo_file_name`) VALUES('2016-01-29 03:00:13', NULL, '2016-01-29 03:00:13', 1, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (48.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/dogs/1
+Completed in 176ms (DB: 114) | 302 Found [http://localhost/dogs/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-29 11:00:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Completed in 25ms (View: 19, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:00:19) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.2ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.4ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 22ms (View: 17, DB: 2) | 200 OK [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:00:20) [GET]
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;36;1mDog Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Load (0.4ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.4ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 30ms (View: 24, DB: 3) | 200 OK [http://localhost/dogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:00:21) [GET]
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 24ms (View: 19, DB: 2) | 200 OK [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#edit (for 127.0.0.1 at 2016-01-29 11:00:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/edit
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Rendered dogs/_upload (0.6ms)
+Rendered dogs/_upload (0.5ms)
+Rendered dogs/_upload (0.5ms)
+Rendered dogs/_upload (0.5ms)
+Rendered dogs/_upload (0.5ms)
+Completed in 24ms (View: 19, DB: 2) | 200 OK [http://localhost/dogs/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#update (for 127.0.0.1 at 2016-01-29 11:00:36) [PUT]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"name"=>"AAA", "upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"description"=>""}}, "1"=>{"description"=>"555"}, "6"=>{"photo"=>"2016-01-29 10:30:41 的螢幕擷圖.png", "description"=>"666"}}}, "id"=>"1", "commit"=>"Update"}
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Load (0.2ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Update (0.3ms)[0m   [0;1mUPDATE `uploads` SET dog_id = NULL WHERE (dog_id = 1 AND id IN (6)) [0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (75.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUpload Create (0.3ms)[0m   [0mINSERT INTO `uploads` (`updated_at`, `photo_file_size`, `created_at`, `dog_id`, `description`, `photo_file_name`) VALUES('2016-01-29 03:00:37', NULL, '2016-01-29 03:00:37', 1, NULL, NULL)[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (331.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/dogs/1
+Completed in 436ms (DB: 410) | 302 Found [http://localhost/dogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-29 11:00:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Completed in 66ms (View: 60, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:00:40) [GET]
+  [4;35;1mDog Load (0.2ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;36;1mDog Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 25ms (View: 20, DB: 2) | 200 OK [http://localhost/dogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:00:52) [GET]
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 24ms (View: 19, DB: 2) | 200 OK [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:07:11) [GET]
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+Completed in 51ms (View: 3, DB: 0) | 200 OK [http://localhost/dogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#new (for 127.0.0.1 at 2016-01-29 11:07:15) [GET]
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+Rendering template within layouts/application
+Rendering dogs/new
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Rendered dogs/_upload (0.9ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.9ms)
+Completed in 51ms (View: 44, DB: 2) | 200 OK [http://localhost/dogs/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#create (for 127.0.0.1 at 2016-01-29 11:07:47) [POST]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"name"=>"妹妹", "upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"description"=>""}, "0"=>{"photo"=>#<File:/tmp/RackMultipart20160129-8668-1c6ihh3-0>, "description"=>"111"}}}}, "commit"=>"Create"}
+  [4;36;1mDog Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDog Create (0.2ms)[0m   [0mINSERT INTO `dogs` (`name`, `updated_at`, `created_at`) VALUES('妹妹', '2016-01-29 03:07:47', '2016-01-29 03:07:47')[0m
+  [4;36;1mUpload Create (0.3ms)[0m   [0;1mINSERT INTO `uploads` (`updated_at`, `photo_file_size`, `created_at`, `dog_id`, `description`, `photo_file_name`) VALUES('2016-01-29 03:07:47', 179216, '2016-01-29 03:07:47', 1, '111', 'gem1.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/patrick/paperclip/dog/public/system/photos/1/pagesize/gem1.jpg
+[paperclip] saving /home/patrick/paperclip/dog/public/system/photos/1/original/gem1.png
+[paperclip] saving /home/patrick/paperclip/dog/public/system/photos/1/thumb/gem1.jpg
+  [4;35;1mSQL (65.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/dogs/1
+Completed in 652ms (DB: 68) | 302 Found [http://localhost/dogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-29 11:07:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Completed in 28ms (View: 22, DB: 2) | 200 OK [http://localhost/dogs/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:07:50) [GET]
+  [4;36;1mDog Load (0.3ms)[0m   [0;1mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;35;1mDog Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mUpload Load (0.3ms)[0m   [0;1mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;35;1mUpload Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Completed in 25ms (View: 19, DB: 2) | 200 OK [http://localhost/dogs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#new (for 127.0.0.1 at 2016-01-29 11:07:52) [GET]
+  [4;36;1mDog Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+Rendering template within layouts/application
+Rendering dogs/new
+  [4;35;1mUpload Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+Rendered dogs/_upload (0.8ms)
+Rendered dogs/_upload (0.8ms)
+Rendered dogs/_upload (0.7ms)
+Rendered dogs/_upload (0.8ms)
+Completed in 80ms (View: 75, DB: 2) | 200 OK [http://localhost/dogs/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#create (for 127.0.0.1 at 2016-01-29 11:08:19) [POST]
+  Parameters: {"authenticity_token"=>"3FGhUKjwBhBHymUDH5DVdLI+zWkGdZYYF3U2TbNemJI=", "dog"=>{"name"=>"笑笑", "upload_attributes"=>{"new"=>{"2"=>{"description"=>""}, "1"=>{"photo"=>#<File:/tmp/RackMultipart20160129-8668-1fec99x-0>, "description"=>"333"}, "0"=>{"photo"=>#<File:/tmp/RackMultipart20160129-8668-a72x71-0>, "description"=>"222"}}}}, "commit"=>"Create"}
+  [4;36;1mDog Columns (21.1ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDog Create (0.2ms)[0m   [0mINSERT INTO `dogs` (`name`, `updated_at`, `created_at`) VALUES('笑笑', '2016-01-29 03:08:19', '2016-01-29 03:08:19')[0m
+  [4;36;1mUpload Create (0.2ms)[0m   [0;1mINSERT INTO `uploads` (`updated_at`, `photo_file_size`, `created_at`, `dog_id`, `description`, `photo_file_name`) VALUES('2016-01-29 03:08:19', 302598, '2016-01-29 03:08:19', 2, '222', '0z2.jpg')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/patrick/paperclip/dog/public/system/photos/2/pagesize/0z2.jpg
+[paperclip] saving /home/patrick/paperclip/dog/public/system/photos/2/original/0z2.jpg
+[paperclip] saving /home/patrick/paperclip/dog/public/system/photos/2/thumb/0z2.jpg
+  [4;35;1mUpload Create (0.2ms)[0m   [0mINSERT INTO `uploads` (`updated_at`, `photo_file_size`, `created_at`, `dog_id`, `description`, `photo_file_name`) VALUES('2016-01-29 03:08:19', 9042, '2016-01-29 03:08:19', 2, '333', '0z3.jpg')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/patrick/paperclip/dog/public/system/photos/3/pagesize/0z3.jpg
+[paperclip] saving /home/patrick/paperclip/dog/public/system/photos/3/original/0z3.jpg
+[paperclip] saving /home/patrick/paperclip/dog/public/system/photos/3/thumb/0z3.jpg
+  [4;36;1mSQL (122.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/dogs/2
+Completed in 614ms (DB: 145) | 302 Found [http://localhost/dogs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#show (for 127.0.0.1 at 2016-01-29 11:08:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mDog Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `dogs`[0m
+  [4;36;1mDog Load (0.2ms)[0m   [0;1mSELECT * FROM `dogs` WHERE (`dogs`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering dogs/show
+  [4;35;1mUpload Load (0.2ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+  [4;36;1mUpload Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+Completed in 59ms (View: 55, DB: 2) | 200 OK [http://localhost/dogs/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DogsController#index (for 127.0.0.1 at 2016-01-29 11:08:22) [GET]
+  [4;35;1mDog Load (0.3ms)[0m   [0mSELECT * FROM `dogs` [0m
+Rendering template within layouts/application
+Rendering dogs/index
+  [4;36;1mDog Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `dogs`[0m
+  [4;35;1mUpload Load (0.4ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 1) [0m
+  [4;36;1mUpload Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `uploads`[0m
+  [4;35;1mUpload Load (0.3ms)[0m   [0mSELECT * FROM `uploads` WHERE (`uploads`.dog_id = 2) [0m
+Completed in 27ms (View: 21, DB: 2) | 200 OK [http://localhost/dogs]
